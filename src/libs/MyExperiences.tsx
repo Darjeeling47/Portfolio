@@ -8,6 +8,7 @@ export default function MyExperiences() {
       description: "",
       image: "",
       link: "",
+      linkDisplay: "unavailable",
     },
     {
       topic: "Project Manager of University Subject Project",
@@ -17,6 +18,7 @@ export default function MyExperiences() {
       description: "",
       image: "",
       link: "",
+      linkDisplay: "Project Link",
     },
     {
       topic: "Founder & CEO",
@@ -26,6 +28,7 @@ export default function MyExperiences() {
       description: "",
       image: "",
       link: "",
+      linkDisplay: "unavailable",
     },
     {
       topic: "Relation and Marketing expert",
@@ -34,7 +37,8 @@ export default function MyExperiences() {
       endYear: "Current",
       description: "",
       image: "",
-      link: "",
+      link: "https://www.openmirai.com/",
+      linkDisplay: "openmirai.com",
     },
     {
       topic: "Computer and Mathematics Tutor",
@@ -43,7 +47,8 @@ export default function MyExperiences() {
       endYear: "05/2024",
       description: "",
       image: "",
-      link: "",
+      link: "https://www.facebook.com/profile.php?id=61553974435444",
+      linkDisplay: "facebook.com",
     },
     {
       topic: "Consultant of Student Council",
@@ -52,7 +57,8 @@ export default function MyExperiences() {
       endYear: "02/2023",
       description: "",
       image: "",
-      link: "",
+      link: "https://instagram.com/pcshschon.sc/",
+      linkDisplay: "instagram.com",
     },
   ];
 }
