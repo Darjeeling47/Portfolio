@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ExperienceBox({ data }: { data: any }) {
@@ -10,8 +11,16 @@ export default function ExperienceBox({ data }: { data: any }) {
       >
         <div className="w-full flex flex-col md:flex-row justify-between">
           <div className="flex flex-row gap-x-5 items-center">
-            <div className="rounded-full !w-14 !h-14 bg-white border border-gray-100 flex justify-center items-center shadow-sm">
-              I{/* <Image> */}
+            <div className="rounded-full !w-14 !h-14 bg-white border border-gray-100 flex justify-center items-center shadow-sm p-2">
+              <Image
+                src={data.image}
+                alt="logo image"
+                width={0}
+                height={0}
+                sizes="100vw"
+                objectFit="contain"
+                className="w-full h-full aspect-square rounded-full"
+              />
             </div>
             <div className="flex flex-col">
               <h1 className="font-medium text-md md:text-lg text-my-gray-300">
