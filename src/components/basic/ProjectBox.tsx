@@ -47,21 +47,26 @@ export default function ProjectBox({ data }: { data: any }) {
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex flex-col gap-1">
-            <div className="flex flex-row justify-end items-center">
+            <div className="flex flex-row justify-end items-center pb-1">
               <i
-                className="bi bi-x-lg hover:text-my-gray-300"
+                className="bi bi-x-lg hover:text-black cursor-pointer transition-all duration-100"
                 onClick={() => setIsOpen(false)}
               ></i>
             </div>
-            <Image
-              src={data.image[0]}
-              alt="project image"
-              width={0}
-              height={0}
-              sizes="100vw"
-              objectFit="cover"
-              className="w-full aspect-auto rounded-xl mb-4"
-            />
+            <div className="w-full h-fit flex flex-row justify-center items-center">
+              <i className="bi bi-chevron-left absolute z-[110] text-2xl drop-shadow-lg left-5 hover:text-4xl hover:text-black transition-all duration-100"></i>
+              <Image
+                src={data.image[0]}
+                alt="project image"
+                width={0}
+                height={0}
+                sizes="100vw"
+                objectFit="cover"
+                className="w-full aspect-auto rounded-xl mb-4"
+              />
+              <i className="bi bi-chevron-right absolute z-[110] text-2xl drop-shadow-lg right-5 hover:text-4xl hover:text-black transition-all duration-100"></i>
+            </div>
+
             <h1 className="text-my-gray-300 font-medium text-2xl">
               {data.topic}
             </h1>
