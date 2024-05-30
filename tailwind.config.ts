@@ -54,6 +54,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar-hide"),
+    require("tailwind-scrollbar"),
+  ],
 };
 export default config;
