@@ -11,14 +11,14 @@ export default function MyExperiences() {
       linkDisplay: "unavailable",
     },
     {
-      topic: "Project Manager of University Subject Project",
-      company: "Chulalongkorn University (Software Management System)",
+      topic: "Project Manager",
+      company: "Software Enginering Subject Project",
       startYear: "03/2024",
       endYear: "04/2024",
       description: "",
       image: "",
-      link: "",
-      linkDisplay: "Project Link",
+      link: "https://software-engineering-cgr-project-frontend.vercel.app/",
+      linkDisplay: "software-engineering-cgr.vercel.app",
     },
     {
       topic: "Founder & CEO",
