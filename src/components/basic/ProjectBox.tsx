@@ -15,7 +15,7 @@ export default function ProjectBox({ data }: { data: any }) {
     } else {
       document.body.classList.remove("overflow-y-hidden");
     }
-  });
+  }, [isOpen]);
 
   const handleNextImageIndex = () => {
     if (imageIndex < maxIndex) setImageIndex(imageIndex + 1);
@@ -47,13 +47,13 @@ export default function ProjectBox({ data }: { data: any }) {
 
       {/* Modal */}
       <div
-        className={`fixed inset-0 z-[100] bg-black/10 overflow-y-auto flex justify-center items-center scrollbar-hide overflow-auto pt-32 ${
+        className={`fixed inset-0 z-[100] bg-black/10 overflow-y-auto flex justify-center scrollbar-hide overflow-y py-20 ${
           isOpen ? "block" : "hidden"
         }`}
         onClick={() => setIsOpen(false)}
       >
         <div
-          className="bg-white/60 my-backdrop-blur border border-gray-200 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[65%] xl:w-[60%] h-fit rounded-2xl p-5 mb-20 mt-32"
+          className="bg-white/60 my-backdrop-blur border border-gray-200 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[65%] xl:w-[60%] h-fit rounded-2xl p-5"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex flex-col gap-1">
