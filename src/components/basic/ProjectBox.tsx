@@ -2,10 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ProjectBox({ data }: { data: any }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-y-hidden");
+    } else {
+      document.body.classList.remove("overflow-y-hidden");
+    }
+  });
 
   return (
     <>
@@ -35,7 +43,7 @@ export default function ProjectBox({ data }: { data: any }) {
         onClick={() => setIsOpen(false)}
       >
         <div
-          className="bg-white/60 backdrop-blur-lg border border-gray-200 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[65%] xl:w-[60%] h-fit rounded-2xl p-5 mb-20 mt-32"
+          className="bg-white/60 my-backdrop-blur border border-gray-200 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[65%] xl:w-[60%] h-fit rounded-2xl p-5 mb-20 mt-32"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex flex-col gap-1">
