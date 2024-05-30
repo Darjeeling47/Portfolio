@@ -33,7 +33,7 @@ export default function ExperienceBox({ data }: { data: any }) {
             {data.startYear} - {data.endYear}
           </p>
         </div>
-
+        {/* <hr className="md:hidden my-1" /> */}
         <p className="font-light text-md mt-2">{data.description}</p>
 
         <p className="font-light text-md mt-3  group-hover:text-blue-500">

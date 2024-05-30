@@ -5,7 +5,8 @@ export default function MyExperiences() {
       company: "UThink",
       startYear: "05/2024",
       endYear: "Current",
-      description: "",
+      description:
+        "Our mission is to help students to think and learn. By providing the most effective and efficient learning methods.",
       image: "/experience/uthink.png",
       link: "",
       linkDisplay: "unavailable",
@@ -15,7 +16,8 @@ export default function MyExperiences() {
       company: "Software Enginering Subject Project",
       startYear: "03/2024",
       endYear: "04/2024",
-      description: "",
+      description:
+        "Book the place where you like and explore the nature with us.",
       image: "/experience/software-engineering-cgr-project.png",
       link: "https://software-engineering-cgr-project-frontend.vercel.app/",
       linkDisplay: "software-engineering-cgr.vercel.app",
@@ -35,7 +37,8 @@ export default function MyExperiences() {
       company: "OpenMirai",
       startYear: "02/2023",
       endYear: "Current",
-      description: "",
+      description:
+        "Our mission is to provide young learners with a solution that will help them discover their true passion and assist them in their journey",
       image: "/experience/openmirai.png",
       link: "https://www.openmirai.com/",
       linkDisplay: "openmirai.com",
