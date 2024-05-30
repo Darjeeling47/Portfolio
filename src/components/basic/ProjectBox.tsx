@@ -47,6 +47,12 @@ export default function ProjectBox({ data }: { data: any }) {
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex flex-col gap-1">
+            <div className="flex flex-row justify-end items-center">
+              <i
+                className="bi bi-x-lg hover:text-my-gray-300"
+                onClick={() => setIsOpen(false)}
+              ></i>
+            </div>
             <Image
               src={data.image[0]}
               alt="project image"
