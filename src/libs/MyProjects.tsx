@@ -176,6 +176,7 @@ export default function MyProjects() {
           image: [
             "/project/project-classroom-0.png",
             "/project/project-classroom-1.png",
+            "/project/project-classroom-2.png",
           ],
           link: "",
         },
