@@ -26,12 +26,12 @@ export default function Navbar() {
           <NavItem href="/experience" pathName={pathName}>
             Experience
           </NavItem>
-          <NavItem href="/award" pathName={pathName}>
+          {/* <NavItem href="/award" pathName={pathName}>
             Award
           </NavItem>
           <NavItem href="/activity" pathName={pathName}>
             Activities
-          </NavItem>
+          </NavItem> */}
         </div>
       </div>
     </div>
