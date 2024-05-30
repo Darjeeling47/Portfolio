@@ -87,7 +87,8 @@ export default function MyProjects() {
           startYear: "2023",
           endYear: "2023",
           codingLang: ["React", "Bootstrap"],
-          description: "",
+          description:
+            "The website is designed to showcase projects and provide information about JLControl.co. It encompasses all relevant company details, including an 'about us' section, contact information, and a portfolio of projects. It's a static webpage built with HTML, CSS, and JavaScript.<br>As a designer and front-end developer, my role involves crafting the visual and interactive elements of the site, ensuring a seamless user experience while effectively communicating JLControl.co's brand and services.",
           image: "",
           link: "https://jlcontrol.com",
         },
@@ -103,9 +104,10 @@ export default function MyProjects() {
             "Express.js",
             "Node.js",
           ],
-          description: "",
+          description:
+            "The website is designed for CEDT students to communicate anonymously. It allows users to chat with each other in groups, functioning similarly to an open chat system. The user interface is designed to be friendly and suitable for students.<br>The system includes features like 'like' and 'report' options for messages to ensure a safe and positive community environment. As a front-end developer, my role involves creating an intuitive and engaging user experience to facilitate seamless interaction among students.",
           image: "",
-          link: "https://jlcontrol.com",
+          link: "",
         },
       ],
     },
