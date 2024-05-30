@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 
 export default function ProjectBox({ data }: { data: any }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
+  const maxIndex = data.image.length - 1;
 
   useEffect(() => {
     if (isOpen) {
@@ -14,6 +16,14 @@ export default function ProjectBox({ data }: { data: any }) {
       document.body.classList.remove("overflow-y-hidden");
     }
   });
+
+  const handleNextImageIndex = () => {
+    if (imageIndex < maxIndex) setImageIndex(imageIndex + 1);
+  };
+
+  const handlePrevImageIndex = () => {
+    if (imageIndex > 0) setImageIndex(imageIndex - 1);
+  };
 
   return (
     <>
@@ -54,9 +64,12 @@ export default function ProjectBox({ data }: { data: any }) {
               ></i>
             </div>
             <div className="w-full h-fit flex flex-row justify-center items-center">
-              <i className="bi bi-chevron-left absolute z-[110] text-2xl drop-shadow-lg left-5 hover:text-4xl hover:text-black transition-all duration-100"></i>
+              <i
+                className="bi bi-chevron-left absolute z-[110] text-2xl drop-shadow-lg left-5 hover:text-4xl hover:text-black transition-all duration-100"
+                onClick={handlePrevImageIndex}
+              ></i>
               <Image
-                src={data.image[0]}
+                src={data.image[imageIndex]}
                 alt="project image"
                 width={0}
                 height={0}
@@ -64,7 +77,10 @@ export default function ProjectBox({ data }: { data: any }) {
                 objectFit="cover"
                 className="w-full aspect-auto rounded-xl mb-4"
               />
-              <i className="bi bi-chevron-right absolute z-[110] text-2xl drop-shadow-lg right-5 hover:text-4xl hover:text-black transition-all duration-100"></i>
+              <i
+                className="bi bi-chevron-right absolute z-[110] text-2xl drop-shadow-lg right-5 hover:text-4xl hover:text-black transition-all duration-100"
+                onClick={handleNextImageIndex}
+              ></i>
             </div>
 
             <h1 className="text-my-gray-300 font-medium text-2xl">
