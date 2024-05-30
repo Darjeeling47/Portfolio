@@ -104,16 +104,16 @@ export default function MyProjects() {
       year: "Year 2023",
       data: [
         {
-          topic: "JL Control Website",
+          topic: "JLControl Website",
           startYear: "2023",
           endYear: "2023",
           codingLang: ["React", "Bootstrap"],
           description:
             "The website is designed to showcase projects and provide information about JLControl.co. It encompasses all relevant company details, including an 'about us' section, contact information, and a portfolio of projects. It's a static webpage built with HTML, CSS, and JavaScript.<br>As a designer and front-end developer, my role involves crafting the visual and interactive elements of the site, ensuring a seamless user experience while effectively communicating JLControl.co's brand and services.",
           image: [
-            "/project/jl-control-website-0.png",
-            "/project/jl-control-website-1.png",
-            "/project/jl-control-website-2.png",
+            "/project/jlcontrol-website-0.png",
+            "/project/jlcontrol-website-1.png",
+            "/project/jlcontrol-website-2.png",
           ],
           link: "https://www.jlcontrol.com/#/th",
         },
