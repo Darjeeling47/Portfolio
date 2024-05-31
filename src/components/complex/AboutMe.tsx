@@ -27,7 +27,7 @@ export default function AboutMe() {
       </div>
       <div className='flex flex-col w-full lg:w-2/3 gap-y-10'>
         <div className='flex flex-col gap-y-4'>
-          <h1 className='font-semibold text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-my-gray-300'>
+          <h1 className='font-semibold text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-my-gray-300 dark:text-white'>
             Hi I'm Supawit Mahadthai
           </h1>
           <h2>A Software Developer, Project Manager</h2>

@@ -4,7 +4,9 @@ export default function MiniAboutMe() {
   return (
     <div className='flex flex-col lg:flex-row lg:justify-between gap-x-10 p-5 md:p-18 lg:p-20 xl:py-20 xl:px-40'>
       <div className='flex flex-col gap-y-3'>
-        <h1 className='text-lg font-medium text-my-gray-300'>About Me</h1>
+        <h1 className='text-lg font-medium text-my-gray-300 dark:text-white'>
+          About Me
+        </h1>
         <p className='font-light'>
           I am passionate about programming and project management, with
           experience in full-stack web development and personal development
