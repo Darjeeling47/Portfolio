@@ -7,7 +7,7 @@ export default function EducationBox({ data }: { data: any }) {
       <div className="w-full">
         <div className="w-full flex flex-col md:flex-row">
           <div className="flex flex-row gap-x-5 items-center">
-            <div className="rounded-full !w-14 !h-14 bg-white border border-gray-100 flex justify-center items-center shadow-sm p-2">
+            <div className="rounded-full !min-w-14 !w-14 !h-14 aspect-square bg-white border border-gray-100 flex justify-center items-center shadow-sm p-2">
               <Image
                 src={data.image}
                 alt="logo image"
