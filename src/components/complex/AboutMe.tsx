@@ -9,12 +9,13 @@ export default function AboutMe() {
       <div className="flex flex-col w-1/2 lg:w-1/3 gap-10">
         <div className="w-full aspect-square relative rounded-3xl">
           <Image
-            src={"/profile.jpeg"}
+            src={"/profile-2.png"}
             alt={"profile"}
             fill
             sizes="100vw"
             objectFit="cover"
-            className="rounded-3xl"
+            priority={true}
+            className="rounded-3xl shadow-lg"
           />
         </div>
         <div className="hidden lg:block">
