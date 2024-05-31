@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function WorkBox({ data }: { data: any }) {
   return (
-    <div className="flex flex-col group rounded-lg hover:bg-gray-100 transition-all duration-100 gap-y-3 p-3">
+    <div className="group rounded-lg hover:bg-gray-100 transition-all duration-100 p-3">
       <Link href={data.link}>
-        <div className="rounded-full !w-14 !h-14 bg-white border border-gray-100 flex justify-center items-center shadow-sm p-2">
+        <div className="rounded-full !w-14 !h-14 bg-white border border-gray-100 flex justify-center items-center shadow-sm p-2 mb-2">
           <Image
             src={data.image}
             alt="logo image"
