@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Contact from "../basic/Contact";
+import Contact from "./Contact";
+import Education from "./Education";
 
 export default function AboutMe() {
   return (
@@ -60,6 +61,7 @@ export default function AboutMe() {
           ผมมีประสบการณ์การทำงานร่วมกับผู้อื่นทั้งในระดับโรงเรียน และระดับบริษัท
           ซึ่งมีหลายตำแหน่งเช่น ผู้ดูแลโครงการ เป็นต้น
         </p>
+        <Education />
       </div>
       <div className="lg:hidden">
         <Contact />
