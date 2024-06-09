@@ -1,6 +1,17 @@
 export default function MyExperiences() {
   return [
     {
+      topic: "Software developer intern",
+      company: "SCG | PromptDee",
+      startYear: "06/2024",
+      endYear: "Current",
+      description:
+        "The present prosperity, success, and stability of SCG are the result of doing business according to its ethical core values the ideals that have been held in high regard and put into practice by the Board of Directors, by management, and by staff at all levels.",
+      image: "/experience/scg.png",
+      link: "",
+      linkDisplay: "unavailable",
+    },
+    {
       topic: "Founder & Tutor",
       company: "UThink",
       startYear: "05/2024",
@@ -11,6 +22,7 @@ export default function MyExperiences() {
       link: "",
       linkDisplay: "unavailable",
     },
+
     {
       topic: "Project Manager",
       company: "Software Enginering Subject Project",

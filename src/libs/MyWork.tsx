@@ -10,6 +10,16 @@ export default function MyWork() {
       linkDisplay: "unavailable",
     },
     {
+      topic: "Software developer intern",
+      company: "SCG | PromptDee",
+      endYear: "Current",
+      description:
+        "The present prosperity, success, and stability of SCG are the result of doing business according to its ethical core values the ideals that have been held in high regard and put into practice by the Board of Directors, by management, and by staff at all levels.",
+      image: "/experience/scg.png",
+      link: "",
+      linkDisplay: "unavailable",
+    },
+    {
       topic: "Developer & Designer",
       company: "JLControl",
       description: "Your comfort and Safety are our main concerns.",
