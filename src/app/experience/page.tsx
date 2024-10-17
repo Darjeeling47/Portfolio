@@ -6,7 +6,7 @@ export default function Experience() {
 
   return (
     <div>
-      <h1 className='my-12 font-semibold text-4xl text-black dark:text-white'>
+      <h1 className='my-12 font-semibold text-4xl text-main-1 dark:text-main-1-dark'>
         Experience
       </h1>
       <ExperienceList data={myExperiences} />

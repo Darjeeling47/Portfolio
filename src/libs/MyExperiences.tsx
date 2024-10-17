@@ -76,5 +76,5 @@ export default function MyExperiences() {
       link: "https://instagram.com/pcshschon.sc/",
       linkDisplay: "instagram.com",
     },
-  ];
+  ]
 }
