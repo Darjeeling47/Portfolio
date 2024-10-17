@@ -10,11 +10,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -38,10 +33,32 @@ const config: Config = {
         fuchsia: colors.fuchsia,
         pink: colors.pink,
         rose: colors.rose,
-        "my-gray": {
-          100: "#d9d9d9",
-          200: "#5c5c5c",
-          300: "#2c2c2c",
+        main: {
+          1: {
+            light: "#000000",
+            DEFAULT: "#000000",
+            dark: "#FEFEFE",
+          },
+          2: {
+            light: "#374151",
+            DEFAULT: "#374151",
+            dark: "#EAEAEA",
+          },
+          3: {
+            light: "#EAEAEA",
+            DEFAULT: "#EAEAEA",
+            dark: "#4F4F4F",
+          },
+          4: {
+            light: "#F9F9F9",
+            DEFAULT: "#F9F9F9",
+            dark: "#434343",
+          },
+        },
+        background: {
+          light: "#FFFFFF",
+          DEFAULT: "#FFFFFF",
+          dark: "#2D2D2D",
         },
       },
       container: {
@@ -55,6 +72,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar-hide"), require("tailwind-scrollbar")],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("tailwind-scrollbar"),
+    require("tailwindcss-animated"),
+  ],
 }
 export default config

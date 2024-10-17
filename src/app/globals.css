@@ -17,18 +17,13 @@
   }
 }
 
-body {
-  background-color: #ffffff;
-  color: #5c5c5c;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-.my-backdrop-blur {
+.backdrop-blur {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
 }
