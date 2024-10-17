@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className='flex flex-col animate-fade-up animate-ease-in-out'>
+    <div className='flex flex-col'>
       {/* delay 0 - 200 */}
       <Banner />
 

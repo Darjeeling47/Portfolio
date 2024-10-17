@@ -24,7 +24,7 @@ export default function MiniAboutMe() {
           sizes='100vw'
           objectFit='cover'
           priority={true}
-          className='rounded-3xl'
+          className='rounded-3xl rotate-6'
         />
       </div>
     </div>

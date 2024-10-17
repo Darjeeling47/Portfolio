@@ -1,7 +1,8 @@
 "use client"
 
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function ProjectImage({
   data,
@@ -40,6 +41,22 @@ export default function ProjectImage({
     }
   }
 
+  const handleNextImage = () => {
+    if (index === imageLength - 1) {
+      setIndex(0)
+    } else {
+      setIndex(index + 1)
+    }
+  }
+
+  const handlePrevImage = () => {
+    if (index === 0) {
+      setIndex(imageLength - 1)
+    } else {
+      setIndex(index - 1)
+    }
+  }
+
   return (
     <>
       <div className='grid grid-cols-2 lg:grid-cols-1 gap-5 w-full relative'>
@@ -62,9 +79,19 @@ export default function ProjectImage({
       </div>
       {isShow && (
         <div
-          className='fixed inset-0 bg-background/30 dark:bg-background-dark/30 backdrop-blur z-[101] flex items-center justify-center'
+          className='fixed inset-0 bg-background/30 dark:bg-background-dark/30 backdrop-blur z-[101] flex items-center justify-between px-1 lg:px-10'
           onClick={() => handleHideImage()}
-          onKeyDown={handleKeyDown}>
+          onKeyDown={(e) => {
+            handleKeyDown(e)
+          }}>
+          <div
+            className='rounded-full bg-main-4 dark:bg-main-4-dark p-1 lg:p-3 flex items-center justify-center'
+            onClick={(e) => {
+              e.stopPropagation()
+              handlePrevImage()
+            }}>
+            <ChevronLeftIcon className='size-5 lg:size-10 cursor-pointer' />
+          </div>
           <Image
             src={data.image[index]}
             alt='project image'
@@ -74,6 +101,14 @@ export default function ProjectImage({
             objectFit='cover'
             className='aspect-auto w-full m-5 sm:m-10 lg:m-28 z-[102]'
           />
+          <div
+            className='rounded-full bg-main-4 dark:bg-main-4-dark p-1 lg:p-3 flex items-center justify-center'
+            onClick={(e) => {
+              e.stopPropagation()
+              handleNextImage()
+            }}>
+            <ChevronRightIcon className='size-5 lg:size-10 cursor-pointer' />
+          </div>
         </div>
       )}
     </>
