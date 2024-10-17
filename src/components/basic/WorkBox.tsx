@@ -3,9 +3,11 @@ import Link from "next/link"
 import ImageCover from "./ImageCover"
 import { BuildingOffice2Icon } from "@heroicons/react/24/outline"
 
-export default function WorkBox({ data }: { data: any }) {
+export default function WorkBox({ data, delay }: { data: any; delay: number }) {
   return (
-    <div className='relative rounded-lg transition-all duration-200 space-y-2'>
+    <div
+      className={`relative rounded-lg transition-all duration-200 space-y-2 animate-fade-up animate-ease-in-out`}
+      style={{ animationDelay: `${delay}ms` }}>
       <p className='absolute top-2 right-2 font-light text-sm'>
         {data.duration}
       </p>

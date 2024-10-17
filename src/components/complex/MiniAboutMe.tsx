@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function MiniAboutMe() {
   return (
     <div className='flex flex-col lg:flex-row lg:justify-between gap-x-10 p-5 md:p-18 lg:p-20 lg:py-14 xl:py-14 xl:px-40'>
-      <div className='flex flex-col gap-y-3'>
+      <div className='flex flex-col gap-y-3 animate-fade-up animate-ease-in-out animate-delay-[250ms]'>
         <h1 className='text-lg font-semibold text-main-1 dark:text-main-1-dark'>
           About Me
         </h1>
@@ -16,7 +16,7 @@ export default function MiniAboutMe() {
           on the world.
         </p>
       </div>
-      <div className='w-full aspect-video relative rounded-3xl hidden lg:block rotate-6 min-w-52 z-[50]'>
+      <div className='w-full aspect-video relative rounded-3xl hidden lg:block rotate-6 min-w-52 z-[50] animate-fade-up animate-ease-in-out animate-delay-[300ms]'>
         <Image
           src={"/profile-3.png"}
           alt={"profile"}
@@ -24,7 +24,7 @@ export default function MiniAboutMe() {
           sizes='100vw'
           objectFit='cover'
           priority={true}
-          className='rounded-3xl'
+          className='rounded-3xl rotate-6'
         />
       </div>
     </div>

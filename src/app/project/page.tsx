@@ -6,7 +6,7 @@ export default function Project() {
 
   return (
     <div>
-      <h1 className='my-12 font-semibold text-4xl text-main-1 dark:text-main-1-dark'>
+      <h1 className='my-12 font-semibold text-4xl text-main-1 dark:text-main-1-dark animate-fade-up animate-ease-in-out'>
         Project
       </h1>
       <div className='flex flex-col gap-10'>
@@ -17,7 +17,7 @@ export default function Project() {
               data={yearOfProject.data}
               yearId={id}
             />
-            <hr className='my-3 border-main-3 dark:border-main-3-dark' />
+            <hr className='my-3 border-main-3 dark:border-main-3-dark animate-fade-up animate-ease-in-out animate-delay-[100ms]' />
           </div>
         ))}
       </div>

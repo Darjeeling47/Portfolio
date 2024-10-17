@@ -6,9 +6,17 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline"
 
-export default function ExperienceBox({ data }: { data: any }) {
+export default function ExperienceBox({
+  data,
+  delay,
+}: {
+  data: any
+  delay: number
+}) {
   return (
-    <div className='grid grid-cols-1 gap-y-3 md:grid-cols-2 w-full'>
+    <div
+      className='grid grid-cols-1 gap-y-3 md:grid-cols-2 w-full animate-fade-up animate-ease-in-out'
+      style={{ animationDelay: `${delay}ms` }}>
       <div className='w-full flex flex-col md:flex-row justify-left gap-x-5'>
         <ImageCover src={data.image} alt={data.topic} />
         <div className='flex flex-col gap-y-2'>
