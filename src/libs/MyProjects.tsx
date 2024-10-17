@@ -5,6 +5,7 @@ export default function MyProjects() {
       data: [
         {
           topic: "Commanders Gambit",
+          organization: "Chula",
           startYear: "2024",
           endYear: "2024",
           codingLang: ["Java", "JavaFX"],
@@ -15,9 +16,11 @@ export default function MyProjects() {
             "/project/commanders-gambit-1.png",
           ],
           link: "",
+          status: "Done",
         },
         {
-          topic: "Campground Reservation System",
+          topic: "Campground Reservation",
+          organization: "Chula",
           startYear: "2024",
           endYear: "2024",
           codingLang: [
@@ -37,9 +40,11 @@ export default function MyProjects() {
             "/project/campground-reservation-system-4.png",
           ],
           link: "https://software-engineering-cgr-project-frontend.vercel.app/",
+          status: "Done",
         },
         {
           topic: "MindLink Tupay",
+          organization: "Chula",
           startYear: "2024",
           endYear: "Current",
           codingLang: [
@@ -60,9 +65,11 @@ export default function MyProjects() {
             "/project/mindlink-tupay-5.png",
           ],
           link: "",
+          status: "Done",
         },
         {
           topic: "Friday Act System",
+          organization: "Chula",
           startYear: "2024",
           endYear: "Current",
           codingLang: [
@@ -81,6 +88,7 @@ export default function MyProjects() {
             "/project/friday-act-system-3.png",
           ],
           link: "",
+          status: "Done",
         },
         // {
         //   topic: "LMT Stone Website",
@@ -105,6 +113,7 @@ export default function MyProjects() {
       data: [
         {
           topic: "JLControl Website",
+          organization: "Chula",
           startYear: "2023",
           endYear: "2023",
           codingLang: ["React", "Bootstrap"],
@@ -116,9 +125,11 @@ export default function MyProjects() {
             "/project/jlcontrol-website-2.png",
           ],
           link: "https://www.jlcontrol.com/#/th",
+          status: "Done",
         },
         {
           topic: "CEDT Library",
+          organization: "Chula",
           startYear: "2023",
           endYear: "2023",
           codingLang: [
@@ -133,6 +144,7 @@ export default function MyProjects() {
             "The website is designed for CEDT students to communicate anonymously. It allows users to chat with each other in groups, functioning similarly to an open chat system. The user interface is designed to be friendly and suitable for students. The system includes features like 'like' and 'report' options for messages to ensure a safe and positive community environment. As a front-end developer, my role involves creating an intuitive and engaging user experience to facilitate seamless interaction among students.",
           image: ["/project/cedt-library-0.png"],
           link: "",
+          status: "Done",
         },
       ],
     },
@@ -141,6 +153,7 @@ export default function MyProjects() {
       data: [
         {
           topic: "Mimir Project",
+          organization: "Chula",
           startYear: "2022",
           endYear: "2023",
           codingLang: ["HTML", "CSS", "Bootstrap", "PHP", "MySQL"],
@@ -153,6 +166,7 @@ export default function MyProjects() {
             "/project/mimir-project-3.png",
           ],
           link: "",
+          status: "Done",
         },
       ],
     },
@@ -161,6 +175,7 @@ export default function MyProjects() {
       data: [
         {
           topic: "Project Classroom",
+          organization: "Chula",
           startYear: "2021",
           endYear: "2022",
           codingLang: [
@@ -179,6 +194,7 @@ export default function MyProjects() {
             "/project/project-classroom-2.png",
           ],
           link: "",
+          status: "Done",
         },
         {
           topic: "Package Tracker",
@@ -189,8 +205,9 @@ export default function MyProjects() {
             "Package Tracker is a web-based application designed to help students at my school track their packages. When I was in boarding school, my friends frequently ordered items online and had them shipped to the school. This inspired the idea for the Package Tracker system. Users can track their packages by entering their name, and the system will display the package's status. Additionally, teachers who manage the packages can update and monitor the status to ensure that packages are properly handled and accounted for.",
           image: ["/project/package-tracker-0.png"],
           link: "",
+          status: "In progress",
         },
       ],
     },
-  ];
+  ]
 }

@@ -6,14 +6,14 @@ export default function Project() {
 
   return (
     <div>
-      <h1 className='my-12 font-semibold text-4xl text-black dark:text-white'>
+      <h1 className='my-12 font-semibold text-4xl text-main-1 dark:text-main-1-dark'>
         Project
       </h1>
       <div className='flex flex-col gap-10'>
         {myProjects.map((yearOfProject) => (
           <div>
             <ProjectList title={yearOfProject.year} data={yearOfProject.data} />
-            <hr className='my-3 dark:border-gray-500' />
+            <hr className='my-3 border-main-3 dark:border-main-3-dark' />
           </div>
         ))}
       </div>
