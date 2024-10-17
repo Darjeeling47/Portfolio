@@ -9,9 +9,11 @@ export default function ProjectList({
   data: any[]
   yearId: number
 }) {
+  const delay = 100
+
   return (
     <div className='mb-7'>
-      <div className='pb-7 flex flex-row gap-x-2 items-baseline'>
+      <div className='pb-7 flex flex-row gap-x-2 items-baseline animate-fade-up animate-ease-in-out animate-delay-[50ms]'>
         <h1 className='text-2xl font-semibold text-main-1 dark:text-main-1-dark'>
           {title}
         </h1>
@@ -19,7 +21,12 @@ export default function ProjectList({
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-10'>
         {data.map((project, id) => (
-          <ProjectBox data={project} id={id} yearId={yearId} />
+          <ProjectBox
+            data={project}
+            id={id}
+            yearId={yearId}
+            delay={id * 50 + delay}
+          />
         ))}
       </div>
     </div>

@@ -1,9 +1,17 @@
 import Image from "next/image"
 import ImageCover from "./ImageCover"
 
-export default function EducationBox({ data }: { data: any }) {
+export default function EducationBox({
+  data,
+  delay,
+}: {
+  data: any
+  delay: number
+}) {
   return (
-    <div className='flex flex-row w-full gap-5'>
+    <div
+      className='flex flex-row w-full gap-5 animate-fade-up animate-ease-in-out'
+      style={{ animationDelay: `${delay}ms` }}>
       <div className='h-full p-[3px] bg-main-3 dark:bg-main-3-dark rounded-full text-transparent hidden lg:block'></div>
       <div className='w-full'>
         <div className='w-full flex flex-col md:flex-row'>

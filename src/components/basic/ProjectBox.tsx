@@ -10,13 +10,17 @@ export default function ProjectBox({
   yearId,
   id,
   data,
+  delay,
 }: {
   yearId: number
   id: number
   data: any
+  delay: number
 }) {
   return (
-    <div className='h-full w-full transition-all duration-200 hover:scale-95'>
+    <div
+      className='h-full w-full transition-all duration-200 hover:scale-95 animate-fade-up animate-ease-in-out'
+      style={{ animationDelay: `${delay}ms` }}>
       <Link href={`/project/${yearId}/${id}`} className='flex flex-col gap-y-4'>
         <div className='border border-main-3 dark:border-main-3-dark rounded-lg w-full h-[200px] lg:h-[150px] relative aspect-auto'>
           <Image

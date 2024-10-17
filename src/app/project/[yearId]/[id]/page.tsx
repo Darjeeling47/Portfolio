@@ -18,13 +18,15 @@ export default function Project({
         <ProjectTitle data={data} />
         <ProjectDetail data={data} />
         <div className='block lg:hidden'>
-          <ProjectImage data={data} />
+          <ProjectImage data={data} delay={400} />
         </div>
-        <hr className='border border-main-3 dark:border-main-3-dark'></hr>
-        <p>{data.description}</p>
+        <hr className='border border-main-3 dark:border-main-3-dark animate-fade-up animate-ease-in-out animate-delay-[500ms] lg:animate-delay-[300ms]'></hr>
+        <p className='animate-fade-up animate-ease-in-out animate-delay-[600ms] lg:animate-delay-[350ms]'>
+          {data.description}
+        </p>
       </div>
       <div className='hidden lg:block'>
-        <ProjectImage data={data} />
+        <ProjectImage data={data} delay={0} />
       </div>
     </div>
   )
