@@ -12,21 +12,24 @@ export default function NavItem({
   href: string
   pathName: string
 }) {
-  const [textColor, setTextColor] = useState("text-gray-200")
+  const [textColor, setTextColor] = useState(
+    "text-main-2 dark:text-main-2-dark"
+  )
 
   useEffect(() => {
-    const path = children
     if (pathName == href.split("/")[1]) {
-      setTextColor("text-blue-500 drop-shadow-md")
+      setTextColor(
+        "text-main-1 dark:text-main-1-dark bg-main-4 dark:bg-main-4-dark"
+      )
     } else {
-      setTextColor("text-my-gray-200 ")
+      setTextColor("text-main-2 dark:text-main-2-dark")
     }
   }, [pathName])
 
   return (
     <Link
       href={href}
-      className={`${textColor} font-medium hover:text-blue-500 hover:scale-105 transition-all duration-100 flex flex-row`}>
+      className={`${textColor} px-3 py-1 rounded-md flex flex-row justify-center items-center font-medium hover:text-black transition-all duration-200 w-fit`}>
       {children}
     </Link>
   )

@@ -7,8 +7,8 @@ export default function Education() {
   const myEducation = MyEducation()
 
   return (
-    <div className='flex flex-col gap-y-4'>
-      <h1 className='text-lg font-medium text-my-gray-300 dark:text-white'>
+    <div className='flex flex-col gap-y-8'>
+      <h1 className='text-lg font-semibold text-main-1 dark:text-main-1-dark'>
         Education
       </h1>
       {myEducation.map((data) => (

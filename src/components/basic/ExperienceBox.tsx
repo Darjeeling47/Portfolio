@@ -1,45 +1,37 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
+import ImageCover from "./ImageCover"
+import {
+  BuildingOffice2Icon,
+  MagnifyingGlassIcon,
+} from "@heroicons/react/24/outline"
 
 export default function ExperienceBox({ data }: { data: any }) {
   return (
-    <div className="flex flex-row w-full gap-5">
-      <div className="h-full p-1 bg-my-gray-100 rounded-full text-transparent hidden md:block"></div>
-      <Link
-        href={data.link}
-        className="w-full hover:bg-gray-100 dark:hover:bg-zinc-800 transition-all duration-200 rounded-lg p-3 group"
-      >
-        <div className="w-full flex flex-col md:flex-row justify-between">
-          <div className="flex flex-row gap-x-5 items-center">
-            <div className="rounded-full !min-w-14 !w-14 !h-14 bg-white border border-gray-100 flex justify-center items-center shadow-sm p-2">
-              <Image
-                src={data.image}
-                alt="logo image"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-full h-full aspect-square rounded-full object-contain"
-              />
-            </div>
-            <div className="flex flex-col">
-              <h1 className="font-medium text-md md:text-lg text-my-gray-300 dark:text-white">
-                {data.topic}
-              </h1>
-              <h2 className="font-light text-sm">{data.company}</h2>
-            </div>
-          </div>
-          <p className="font-light text-sm pt-2 md:pt-0">
+    <div className='grid grid-cols-1 gap-y-3 md:grid-cols-2 w-full'>
+      <div className='w-full flex flex-col md:flex-row justify-left gap-x-5'>
+        <ImageCover src={data.image} alt={data.topic} />
+        <div className='flex flex-col gap-y-2'>
+          <h1 className='font-medium text-md md:text-lg text-main-1 dark:text-main-1-dark'>
+            {data.topic}
+          </h1>
+          <h2 className='flex flex-row gap-x-1 items-center'>
+            <BuildingOffice2Icon className='size-5' strokeWidth={1.5} />
+            {data.company}
+          </h2>
+          <h2 className='font-light text-sm'>
             {data.startYear} - {data.endYear}
-          </p>
+          </h2>
+          {data.link && (
+            <Link
+              href={data.link}
+              className='font-light text-sm text-blue-500 dark:text-blue-400 flex flex-row items-center gap-x-1'>
+              <MagnifyingGlassIcon className='size-4' /> View More
+            </Link>
+          )}
         </div>
-        {/* <hr className="md:hidden my-1" /> */}
-        <p className="font-light text-md mt-2">{data.description}</p>
-
-        <p className="font-light text-md mt-3  group-hover:text-blue-500">
-          <i className="bi bi-link-45deg mr-3"></i>
-          {data.linkDisplay}
-        </p>
-      </Link>
+      </div>
+      <p className='font-light text-md mt-2'>{data.description}</p>
     </div>
-  );
+  )
 }
