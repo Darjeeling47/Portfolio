@@ -10,9 +10,13 @@ export default function Project() {
         Project
       </h1>
       <div className='flex flex-col gap-10'>
-        {myProjects.map((yearOfProject) => (
+        {myProjects.map((yearOfProject, id) => (
           <div>
-            <ProjectList title={yearOfProject.year} data={yearOfProject.data} />
+            <ProjectList
+              title={yearOfProject.year}
+              data={yearOfProject.data}
+              yearId={id}
+            />
             <hr className='my-3 border-main-3 dark:border-main-3-dark' />
           </div>
         ))}
