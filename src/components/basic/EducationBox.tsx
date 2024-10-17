@@ -4,7 +4,7 @@ import ImageCover from "./ImageCover"
 export default function EducationBox({ data }: { data: any }) {
   return (
     <div className='flex flex-row w-full gap-5'>
-      <div className='h-full p-[3px] bg-main-3 rounded-full text-transparent hidden lg:block'></div>
+      <div className='h-full p-[3px] bg-main-3 dark:bg-main-3-dark rounded-full text-transparent hidden lg:block'></div>
       <div className='w-full'>
         <div className='w-full flex flex-col md:flex-row'>
           <div className='flex flex-row gap-x-5 items-center'>
