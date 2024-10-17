@@ -5,7 +5,7 @@ export default function MyWork() {
       company: "MindLink Tupay",
       description:
         "Our system will help you use less time with more efficiency to manage your tutoring business.",
-      image: "/work/mindlink-tupay.png",
+      image: "/work/mindlink.png",
       link: "",
       linkDisplay: "unavailable",
       duration: "03/2024 - Current",

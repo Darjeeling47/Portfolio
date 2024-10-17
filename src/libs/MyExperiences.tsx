@@ -1,49 +1,34 @@
 export default function MyExperiences() {
   return [
     {
-      topic: "Software developer intern",
-      company: "SCG | PromptDee",
-      startYear: "06/2024",
+      topic: "Founder & CEO",
+      company: "MindLink",
+      startYear: "03/2024",
       endYear: "Current",
       description:
-        "The present prosperity, success, and stability of SCG are the result of doing business according to its ethical core values the ideals that have been held in high regard and put into practice by the Board of Directors, by management, and by staff at all levels.",
-      image: "/experience/scg.png",
+        "Our system will help you use less time with more efficiency to manage your tutoring business. MindLink is a platform that connects tutors and students. It provides a seamless experience for both parties, allowing tutors to manage their schedules and students to book lessons with ease. I am responsible for leading the development of the platform, managing the team, and ensuring the success of the business.",
+      image: "/experience/mindlink.png",
       link: "",
-      linkDisplay: "unavailable",
     },
     {
       topic: "Founder & Tutor",
       company: "UThink",
-      startYear: "05/2024",
+      startYear: "12/2022",
       endYear: "Current",
       description:
-        "You Think We Support. Our mission is to help students to think and learn.",
+        "At UThink, we support and empower students in their journey of thinking and learning. Our mission is to foster a love for knowledge. Currently, we provide computer science tutoring for students in Thailand, and I am one of the tutors involved. I envision building a community of students passionate about learning and thinking critically in the field of computer science.",
       image: "/experience/uthink.png",
-      link: "",
-      linkDisplay: "unavailable",
-    },
-
-    {
-      topic: "Project Manager",
-      company: "Software Enginering Subject Project",
-      startYear: "03/2024",
-      endYear: "04/2024",
-      description:
-        "Book the place where you like and explore the nature with us.",
-      image: "/experience/software-engineering-cgr-project.png",
-      link: "https://software-engineering-cgr-project-frontend.vercel.app/",
-      linkDisplay: "software-engineering-cgr.vercel.app",
+      link: "https://www.facebook.com/profile.php?id=61560754232117",
     },
     {
-      topic: "Founder & CEO",
-      company: "MindLink Tupay",
-      startYear: "03/2024",
-      endYear: "Current",
+      topic: "Software developer intern",
+      company: "SCG",
+      startYear: "06/2024",
+      endYear: "08/2024",
       description:
-        "Our system will help you use less time with more efficiency to manage your tutoring business.",
-      image: "/experience/mindlink-tupay.png",
+        "I worked as a software developer intern at SCG | PromptDee, where I was responsible for developing and maintaining the PromptDee Line bot system manager. This platform connects customers with service providers and administrators. I was also involved in creating the admin panel for the PromptDee Line bot. During this internship, I gained valuable experience in software development, project management, and team collaboration.",
+      image: "/experience/scg.png",
       link: "",
-      linkDisplay: "unavailable",
     },
     {
       topic: "Relation and Marketing expert",
@@ -51,30 +36,19 @@ export default function MyExperiences() {
       startYear: "02/2023",
       endYear: "Current",
       description:
-        "Our mission is to provide young learners with a solution that will help them discover their true passion and assist them in their journey",
+        "Our mission is to provide young learners with solutions that help them discover their true passion and guide them on their journey. I currently work as a relationship and marketing expert at OpenMirai, where I am responsible for building strong connections with customers and promoting our services. I have been involved in developing marketing strategies, managing social media accounts, and organizing events to attract new customers. I am passionate about helping students achieve their goals and making a positive impact on their lives.",
       image: "/experience/openmirai.png",
       link: "https://www.openmirai.com/",
-      linkDisplay: "openmirai.com",
-    },
-    {
-      topic: "Computer and Mathematics Tutor",
-      company: "#include tutor.s",
-      startYear: "12/2022",
-      endYear: "05/2024",
-      description: "Let's learn programming and math together.",
-      image: "/experience/include-tutor-s.png",
-      link: "https://www.facebook.com/profile.php?id=61553974435444",
-      linkDisplay: "facebook.com",
     },
     {
       topic: "Consultant of Student Council",
       company: "PCSHS Chonburi School",
       startYear: "08/2022",
       endYear: "02/2023",
-      description: "We will make the school better together.",
+      description:
+        "I am a consultant for the student council at PCSHS Chonburi School, where I provide guidance and support to student council members in organizing school events, managing projects, and promoting student activities. Additionally, I help students develop leadership, teamwork, and communication skills. I am passionate about empowering students to become leaders and make a positive impact on their school community.",
       image: "/experience/pcshs-chonburi-school.png",
       link: "https://instagram.com/pcshschon.sc/",
-      linkDisplay: "instagram.com",
     },
   ]
 }

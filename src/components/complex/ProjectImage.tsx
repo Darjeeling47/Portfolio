@@ -79,7 +79,7 @@ export default function ProjectImage({
       </div>
       {isShow && (
         <div
-          className='fixed inset-0 bg-background/30 dark:bg-background-dark/30 backdrop-blur z-[101] flex items-center justify-between px-1 lg:px-10'
+          className='fixed inset-0 bg-background/30 dark:bg-background-dark/30 backdrop-blur z-[101] flex items-center justify-between px-1 lg:px-10 w-screen'
           onClick={() => handleHideImage()}
           onKeyDown={(e) => {
             handleKeyDown(e)
@@ -99,7 +99,7 @@ export default function ProjectImage({
             height={0}
             sizes=' 100vw'
             objectFit='cover'
-            className='aspect-auto w-full m-5 sm:m-10 lg:m-28 z-[102]'
+            className='aspect-auto w-full m-5 sm:m-10 lg:m-14 z-[102]'
           />
           <div
             className='rounded-full bg-main-4 dark:bg-main-4-dark p-1 lg:p-3 flex items-center justify-center'
