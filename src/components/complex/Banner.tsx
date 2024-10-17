@@ -13,18 +13,18 @@ export default function Banner() {
             sizes='100vw'
             objectFit='cover'
             priority={true}
-            className='rounded-3xl shadow-lg'
+            className='rounded-3xl'
           />
         </div>
       </div>
       <div className='flex flex-col w-full lg:w-2/3 gap-y-7'>
         <div className='flex flex-col gap-y-4'>
-          <h1 className='font-semibold text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-my-gray-400 dark:text-white'>
+          <h1 className='font-semibold text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-main-1 dark:text-main-1-dark'>
             Hi I'm Supawit Mahadthai
           </h1>
           <h2>A Software Developer, Project Manager</h2>
         </div>
-        <div className='flex flex-row gap-x-8 justify-start text-xl dark:text-my-gray-100'>
+        <div className='flex flex-row gap-x-8 justify-start text-xl'>
           <Link
             href={"https://www.facebook.com/profile.php?id=100019637738479"}>
             <i className='bi bi-facebook transition-all duration-100'></i>

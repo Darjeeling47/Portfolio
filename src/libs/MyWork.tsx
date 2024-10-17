@@ -8,6 +8,7 @@ export default function MyWork() {
       image: "/work/mindlink-tupay.png",
       link: "",
       linkDisplay: "unavailable",
+      duration: "03/2024 - Current",
     },
     {
       topic: "Software developer intern",
@@ -18,6 +19,7 @@ export default function MyWork() {
       image: "/experience/scg.png",
       link: "",
       linkDisplay: "unavailable",
+      duration: "06/2024 - 08/2024",
     },
     {
       topic: "Developer & Designer",
@@ -26,6 +28,7 @@ export default function MyWork() {
       image: "/work/jlcontrol.png",
       link: "https://www.jlcontrol.com/#/th",
       linkDisplay: "jlcontrol.com",
+      duration: "03/2024 - Current",
     },
     {
       topic: "Relation and Marketing expert",
@@ -35,15 +38,7 @@ export default function MyWork() {
       image: "/work/openmirai.png",
       link: "https://www.openmirai.com/",
       linkDisplay: "openmirai.com",
+      duration: "02/2023 - 07/2024",
     },
-    {
-      topic: "Project Manager",
-      company: "Software Enginering Subject Project",
-      description:
-        "Book the place where you like and explore the nature with us.",
-      image: "/work/software-engineering-cgr-project.png",
-      link: "https://software-engineering-cgr-project-frontend.vercel.app/",
-      linkDisplay: "software-engineering-cgr.vercel.app",
-    },
-  ];
+  ]
 }

@@ -1,24 +1,16 @@
 import Image from "next/image"
+import ImageCover from "./ImageCover"
 
 export default function EducationBox({ data }: { data: any }) {
   return (
     <div className='flex flex-row w-full gap-5'>
-      <div className='h-full p-[3px] bg-my-gray-100 rounded-full text-transparent hidden lg:block'></div>
+      <div className='h-full p-[3px] bg-main-3 rounded-full text-transparent hidden lg:block'></div>
       <div className='w-full'>
         <div className='w-full flex flex-col md:flex-row'>
           <div className='flex flex-row gap-x-5 items-center'>
-            <div className='rounded-full !min-w-14 !w-14 !h-14 aspect-square bg-white border border-gray-100 flex justify-center items-center shadow-sm p-2'>
-              <Image
-                src={data.image}
-                alt='logo image'
-                width={0}
-                height={0}
-                sizes='100vw'
-                className='w-full h-full aspect-square rounded-full object-contain'
-              />
-            </div>
+            <ImageCover src={data.image} alt={data.topic} />
             <div className='flex flex-col'>
-              <h1 className='font-medium text-md md:text-md text-my-gray-200 dark:text-gray-300'>
+              <h1 className='font-medium text-md md:text-md text-main-1 dark:text-main-1-dark'>
                 {data.topic}
               </h1>
               <h2 className='font-light text-sm'>
