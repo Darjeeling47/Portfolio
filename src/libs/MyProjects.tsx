@@ -4,7 +4,25 @@ export default function MyProjects() {
       year: "Year 2024",
       data: [
         {
-          topic: "Survival Kit Store",
+          topic: "DIW Lab Platform",
+          organization: "Department of Industrial Works",
+          startYear: "06/2024",
+          endYear: "Current",
+          codingLang: ["Next.js", "TailwindCSS", "Node.js"],
+          role: ["Frontend Developer", "Designer"],
+          description:
+            "The system is designed to help the Department of Industrial Works (DIW) manage and monitor their laboratory equipment. It provides a comprehensive view of all equipment, including details such as the equipment name, model, and status. Users can easily search for specific equipment, view detailed information, and update the status of each item. The system also generates reports on equipment usage and maintenance, helping DIW optimize their resources and ensure equipment is well-maintained. As a front-end developer and designer, I ensured the system is user-friendly and visually appealing, providing a seamless experience for DIW staff.",
+          image: [
+            "/project/diw-lab-platform-0.png",
+            "/project/diw-lab-platform-1.png",
+            "/project/diw-lab-platform-2.png",
+            "/project/diw-lab-platform-3.png",
+          ],
+          link: "https://lab-platform.diw.go.th/",
+          status: "In progress",
+        },
+        {
+          topic: "Summy Share (SKS)",
           organization: "Personal Project",
           startYear: "10/2024",
           endYear: "10/2024",
@@ -265,5 +283,5 @@ export default function MyProjects() {
         },
       ],
     },
-  ]
+  ];
 }

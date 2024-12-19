@@ -34,7 +34,7 @@ export default function MyExperiences() {
       topic: "Relation and Marketing expert",
       company: "OpenMirai",
       startYear: "02/2023",
-      endYear: "Current",
+      endYear: "07/2024",
       description:
         "Our mission is to provide young learners with solutions that help them discover their true passion and guide them on their journey. I currently work as a relationship and marketing expert at OpenMirai, where I am responsible for building strong connections with customers and promoting our services. I have been involved in developing marketing strategies, managing social media accounts, and organizing events to attract new customers. I am passionate about helping students achieve their goals and making a positive impact on their lives.",
       image: "/experience/openmirai.png",
@@ -50,5 +50,5 @@ export default function MyExperiences() {
       image: "/experience/pcshs-chonburi-school.png",
       link: "https://instagram.com/pcshschon.sc/",
     },
-  ]
+  ];
 }
