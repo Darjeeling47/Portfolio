@@ -1,8 +1,8 @@
 export default function MyWork() {
   return [
     {
-      topic: "Founder & CEO",
-      company: "MindLink Tupay",
+      topic: "Founder",
+      company: "PrineDev & PrineClass",
       description:
         "Our system will help you use less time with more efficiency to manage your tutoring business.",
       image: "/work/mindlink.png",
@@ -40,5 +40,5 @@ export default function MyWork() {
       linkDisplay: "openmirai.com",
       duration: "02/2023 - 07/2024",
     },
-  ]
+  ];
 }

@@ -1,12 +1,12 @@
 export default function MyExperiences() {
   return [
     {
-      topic: "Founder & CEO",
-      company: "MindLink",
+      topic: "Founder",
+      company: "PrineDev & PrineClass",
       startYear: "03/2024",
       endYear: "Current",
       description:
-        "Our system will help you use less time with more efficiency to manage your tutoring business. MindLink is a platform that connects tutors and students. It provides a seamless experience for both parties, allowing tutors to manage their schedules and students to book lessons with ease. I am responsible for leading the development of the platform, managing the team, and ensuring the success of the business.",
+        "Our system will help you use less time with more efficiency to manage your tutoring business. PrineClass is a platform that connects tutors and students. It provides a seamless experience for both parties, allowing tutors to manage their schedules and students to book lessons with ease. I am responsible for leading the development of the platform, managing the team, and ensuring the success of the business.",
       image: "/experience/mindlink.png",
       link: "",
     },

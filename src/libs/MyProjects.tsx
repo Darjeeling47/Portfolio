@@ -1,47 +1,12 @@
 export default function MyProjects() {
   return [
     {
-      year: "Year 2024",
+      year: "Year 2025",
       data: [
         {
-          topic: "DIW Lab Platform",
-          organization: "Department of Industrial Works",
-          startYear: "06/2024",
-          endYear: "Current",
-          codingLang: ["Next.js", "TailwindCSS", "Node.js"],
-          role: ["Frontend Developer", "Designer"],
-          description:
-            "The system is designed to help the Department of Industrial Works (DIW) manage and monitor their laboratory equipment. It provides a comprehensive view of all equipment, including details such as the equipment name, model, and status. Users can easily search for specific equipment, view detailed information, and update the status of each item. The system also generates reports on equipment usage and maintenance, helping DIW optimize their resources and ensure equipment is well-maintained. As a front-end developer and designer, I ensured the system is user-friendly and visually appealing, providing a seamless experience for DIW staff.",
-          image: [
-            "/project/diw-lab-platform-0.png",
-            "/project/diw-lab-platform-1.png",
-            "/project/diw-lab-platform-2.png",
-            "/project/diw-lab-platform-3.png",
-          ],
-          link: "https://lab-platform.diw.go.th/",
-          status: "In progress",
-        },
-        {
-          topic: "Summy Share (SKS)",
-          organization: "Personal Project",
-          startYear: "10/2024",
-          endYear: "10/2024",
-          codingLang: ["Next.js", "TailwindCSS", "MongoDB", "Node.js"],
-          role: ["Full-stack Developer", "Designer"],
-          description:
-            "The Survival kit store is the platform that sell summaries for university students. The platform allows users to purchase summaries for various subjects, with each summary containing detailed notes, diagrams, and explanations. The platform is designed to be user-friendly and intuitive, providing a seamless experience for both buyers and sellers. As a full-stack developer and designer, I ensured the system is visually appealing and functional, delivering a valuable resource for university students.",
-          image: [
-            "/project/sks-0.png",
-            "/project/sks-1.png",
-            "/project/sks-2.png",
-          ],
-          link: "https://survival-kit-store.vercel.app/",
-          status: "Done",
-        },
-        {
-          topic: "MindLink System",
-          organization: "MindLink",
-          startYear: "08/2024",
+          topic: "PrineClass",
+          organization: "PrineDev",
+          startYear: "05/2025",
           endYear: "Current",
           codingLang: [
             "Next.js",
@@ -50,7 +15,7 @@ export default function MyProjects() {
             "Express.js",
             "Node.js",
           ],
-          role: ["CEO", "Project Manager", "Designer"],
+          role: ["Founder"],
           description:
             "The system helps tutors efficiently and securely organize payments and manage students. Users can create organizations within the system, each accommodating multiple roles such as teachers, accountants, and administrators. Users can also create new classes to organize students, with each class containing payment details such as the payment amount and due date. The system allows parents to make payments using a Line bot, which automatically checks and validates receipts, displaying the data to the organization. As the CEO and Project Manager, I established the overall structure and contributed as a full-stack developer, ensuring the system effectively reduces the time tutors spend on managing student payments and organization.",
           image: [
@@ -63,30 +28,13 @@ export default function MyProjects() {
             "/project/mindlink-6.png",
             "/project/mindlink-7.png",
           ],
-          link: "",
+          link: "https://prineclass.com",
           status: "In progress",
-        },
-        {
-          topic: "LineBot Message Manager",
-          organization: "SCG | Prompt Dee & Rakmao",
-          startYear: "06/2024",
-          endYear: "08/2024",
-          codingLang: ["Next.js", "TailwindCSS", "MongoDB", "Node.js"],
-          role: ["Designer", "Full-stack Developer"],
-          description:
-            "The LineBot Message Manager is a web-based application developed for SCG to manage and fully customize flex messages sent by LineBot. The system provides a comprehensive view of all messages, including saving flex messages, tracking user interactions, and generating custom Excel templates. It also offers detailed analytics, such as the number of users who clicked or replied to messages. This data is vital for SCG to evaluate the effectiveness of their LineBot campaigns and optimize future messaging strategies. As a designer and full-stack developer, I ensured the system is user-friendly and delivers valuable insights to help SCG enhance their LineBot messaging performance.",
-          image: [
-            "/project/linebot-message-manager-0.png",
-            "/project/linebot-message-manager-1.png",
-            "/project/linebot-message-manager-2.png",
-          ],
-          link: "",
-          status: "Done",
         },
         {
           topic: "Friday Act System",
           organization: "Chula Engineering",
-          startYear: "06/2024",
+          startYear: "05/2025",
           endYear: "Current",
           codingLang: [
             "Next.js",
@@ -106,6 +54,81 @@ export default function MyProjects() {
           ],
           link: "",
           status: "In progress",
+        },
+        {
+          topic: "DIPROM Incredit system",
+          organization: "DIPROM | JLControl",
+          startYear: "05/2025",
+          endYear: "Current",
+          codingLang: ["Next.js", "TailwindCSS", "Node.js"],
+          role: ["Frontend Developer", "Designer"],
+          description:
+            "Incredit system is a web-based application developed for DIPROM to manage and monitor their credit system. The system provides a comprehensive view of all loan requests, including details such as the loan amount, date, and status. Users can easily search for specific transactions, view detailed information, and update the status of each request. The system also generates reports on credit usage and maintenance, helping DIPROM optimize their resources and ensure accurate financial records. As a front-end developer and designer, I ensured the system is user-friendly and visually appealing, providing a seamless experience for DIPROM staff.",
+          image: [
+            "/project/diprom-incredit-system-0.png",
+            "/project/diprom-incredit-system-1.png",
+            "/project/diprom-incredit-system-2.png",
+            "/project/diprom-incredit-system-3.png",
+          ],
+          link: "",
+          status: "In progress",
+        },
+      ],
+    },
+    {
+      year: "Year 2024",
+      data: [
+        {
+          topic: "DIW Lab Platform",
+          organization: "Department of Industrial Works | JLControl",
+          startYear: "06/2024",
+          endYear: "12/2024",
+          codingLang: ["Next.js", "TailwindCSS", "Node.js"],
+          role: ["Frontend Developer", "Designer"],
+          description:
+            "The system is designed to help the Department of Industrial Works (DIW) manage and monitor their laboratory equipment. It provides a comprehensive view of all equipment, including details such as the equipment name, model, and status. Users can easily search for specific equipment, view detailed information, and update the status of each item. The system also generates reports on equipment usage and maintenance, helping DIW optimize their resources and ensure equipment is well-maintained. As a front-end developer and designer, I ensured the system is user-friendly and visually appealing, providing a seamless experience for DIW staff.",
+          image: [
+            "/project/diw-lab-platform-0.png",
+            "/project/diw-lab-platform-1.png",
+            "/project/diw-lab-platform-2.png",
+            "/project/diw-lab-platform-3.png",
+          ],
+          link: "https://lab-platform.diw.go.th/",
+          status: "Done",
+        },
+        {
+          topic: "Summy Share (SKS)",
+          organization: "Personal Project",
+          startYear: "10/2024",
+          endYear: "10/2024",
+          codingLang: ["Next.js", "TailwindCSS", "MongoDB", "Node.js"],
+          role: ["Full-stack Developer", "Designer"],
+          description:
+            "The Survival kit store is the platform that sell summaries for university students. The platform allows users to purchase summaries for various subjects, with each summary containing detailed notes, diagrams, and explanations. The platform is designed to be user-friendly and intuitive, providing a seamless experience for both buyers and sellers. As a full-stack developer and designer, I ensured the system is visually appealing and functional, delivering a valuable resource for university students.",
+          image: [
+            "/project/sks-0.png",
+            "/project/sks-1.png",
+            "/project/sks-2.png",
+          ],
+          link: "https://survival-kit-store.vercel.app/",
+          status: "Done",
+        },
+        {
+          topic: "LineBot Message Manager",
+          organization: "SCG | Prompt Dee & Rakmao",
+          startYear: "06/2024",
+          endYear: "08/2024",
+          codingLang: ["Next.js", "TailwindCSS", "MongoDB", "Node.js"],
+          role: ["Designer", "Full-stack Developer"],
+          description:
+            "The LineBot Message Manager is a web-based application developed for SCG to manage and fully customize flex messages sent by LineBot. The system provides a comprehensive view of all messages, including saving flex messages, tracking user interactions, and generating custom Excel templates. It also offers detailed analytics, such as the number of users who clicked or replied to messages. This data is vital for SCG to evaluate the effectiveness of their LineBot campaigns and optimize future messaging strategies. As a designer and full-stack developer, I ensured the system is user-friendly and delivers valuable insights to help SCG enhance their LineBot messaging performance.",
+          image: [
+            "/project/linebot-message-manager-0.png",
+            "/project/linebot-message-manager-1.png",
+            "/project/linebot-message-manager-2.png",
+          ],
+          link: "",
+          status: "Done",
         },
         {
           topic: "MindLink Prototype",
